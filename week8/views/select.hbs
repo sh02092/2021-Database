@@ -1,0 +1,54 @@
+<h1>{{ title }}</h1>
+
+<!-- table 선언 -->
+<table>
+    <!-- tr : 행 -->
+    <tr>
+        <!-- td : 열 -->
+        <td>Fname</td>
+        <td>Minit</td>
+        <td>Lname</td>
+        <td>Ssn</td>
+        <td>Bdate</td>
+        <td>Address</td>
+        <td>Sex</td>
+        <td>Salary</td>
+        <td>Super_ssn</td>
+        <td>Dno</td>
+    </tr>
+    <!-- Employee에 해당하는 값 data가 들어올 때마다 행 추가하여 값 입력-->
+    {{#each employee}}
+    <tr>
+        <td>{{Fname}}</td>
+        <td>{{Minit}}</td>
+        <td>{{Lname}}</td>
+        <td>{{Ssn}}</td>
+        <td>{{Bdate}}</td>
+        <td>{{Address}}</td>
+        <td>{{Sex}}</td>
+        <td>{{Salary}}</td>
+        <td>{{Super_ssn}}</td>
+        <td>{{Dno}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{ title2 }}</h1>
+
+<table>
+    <tr>
+        <td>Dname</td>
+        <td>Dnumber</td>
+        <td>Mgr_ssn</td>
+        <td>Mgr_start_date</td>
+    </tr>
+    <!-- Department에 해당하는 값 data가 들어올 때마다 행 추가하여 값 입력-->
+    {{#each department}}
+    <tr>
+        <td>{{Dname}}</td>
+        <td>{{Dnumber}}</td>
+        <td>{{Mgr_ssn}}</td>
+        <td>{{Mgr_start_date}}</td>
+    </tr>
+    {{/each}}
+</table>
