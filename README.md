@@ -119,7 +119,7 @@ Sname|Snumber
 실습의 DB table 내용에 대한 설명을 Markdown 문법을 사용하여 README.md 파일에 작성하는 실습을 진행하였습니다.
 
 실습 과제를 github에 업로드하기 위해 우선 github에 새로운 repository를 public으로 생성하고, 로컬 폴더와 연결하였습니다. 넣고 싶은 파일을 로컬 폴더 안에 넣고, 큰 용량을 차지하는 'node_modules' 파일은 제외하기 위해 .gitignore 파일을 만들어 경로 지정하여 제외하였습니다.  
-![그림1](./picture1.PNG){: width="400" height="400"}  
+<img src="./picture.png" width="40%" height="30%"></img>
 
 이후 wsl terminal에
 > git add .  
